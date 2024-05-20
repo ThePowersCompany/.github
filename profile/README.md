@@ -1,26 +1,30 @@
 ## The Powers Company Github
 
-- [Powers P3 - Management Operating System](https://www.powers-p3.com/)
+- [https://www.powers-p3.com/](https://www.powers-p3.com/) - Management Operating System Software
 
 Our software projects are currently split across four repositories.
 
+![Tech Stack](./techstack.jpg)
+
 - Frontend / UI
 
-  - [next](https://github.com/ThePowersCompany/next) (Next.js React Web Application)
-  - [native](https://github.com/ThePowersCompany/native) (Expo React Native Mobile Application)
+  - [next](https://github.com/ThePowersCompany/next) - Next.js React Web Application
+  - [native](https://github.com/ThePowersCompany/native) - Expo React Native Mobile Application
 
 - Backend
 
-  - [server](https://github.com/ThePowersCompany/server)(Zig Backend API Server)
+  - [server](https://github.com/ThePowersCompany/server) - Zig Backend API Server)
 
 - Microcontrollers
-  - [micro](https://github.com/ThePowersCompany/micro) (ESP32 Espressif Idf C framework)
+  - [micro](https://github.com/ThePowersCompany/micro) - ESP32 Espressif Idf C framework
 
-## We use Github Projects and Views for Project Management. We track issues in the board view.
+## Project Management
 
-- [Project - Powers Software](https://github.com/orgs/ThePowersCompany/projects/3)
+We use Github Projects and Views for Project Management. We track issues in the board view.
 
 You'll find a board view here for each of the repositories.
+
+- [Project - Powers Software](https://github.com/orgs/ThePowersCompany/projects/3)
 
 ## Infrastructure
 
@@ -35,7 +39,7 @@ We use Digital Ocean to host our Zig Backend API Server.
 We have two servers on Digital Ocean for Staging and Production instances of our Backend.
 
 - Staging - 64.225.0.10:3333 or https://staging.powers-p3.com:3333
-- Production - 161.35.179.38:3333 https://prod.powers-p3.com:3333
+- Production - 161.35.179.38:3333 or https://prod.powers-p3.com:3333
 
 We use Supabase for our managed PostgreSQL database.
 
@@ -43,20 +47,30 @@ We use Supabase for our managed PostgreSQL database.
 
 We have two database instances for Staging and Production.
 
+> [!NOTE]
+> We are option out of Supavisor Pooler and using direct connections on IPV4.
+
 - [Staging DB](https://supabase.com/dashboard/project/vjdpcabrnelrhyzdwqpd)
 
 ```bash
-# IPV4 - no pooler
 DATABASE_URL="postgresql://postgres:horsewater10gallon@db.vjdpcabrnelrhyzdwqpd.supabase.co:5432/postgres?connection_limit=5"
 ```
 
 - [Production DB](https://supabase.com/dashboard/project/jnqaulbqopvillqcrqbd)
 
 ```bash
-# IPV4 - no pooler
 DATABASE_URL="postgresql://postgres:2qxEH1J8ubCQqMfz@db.jnqaulbqopvillqcrqbd.supabase.co:5432/postgres?connection_limit=1&pool_timeout=20"
 ```
 
 ## CI / Testing / Deployment
 
 We are using Github actions for CI. There is various testing and deployment scripts set up to automate the process. Please refer to each repositories README for more info on how this is implemented in the environment.
+
+## Branch naming
+
+Branch naming convention should follow the format [repo name]/[issue number]
+
+- next/1337
+- native/420
+- server/69
+- micro/666
