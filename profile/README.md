@@ -4,7 +4,7 @@
 
 Our software projects are currently split across four repositories.
 
-![Tech Stack](./techstack.jpg)
+![Tech Stack](https://raw.githubusercontent.com/ThePowersCompany/.github/main/profile/techstack.jpg)
 
 - Frontend / UI
 
@@ -13,7 +13,7 @@ Our software projects are currently split across four repositories.
 
 - Backend
 
-  - [server](https://github.com/ThePowersCompany/server) - Zig Backend API Server)
+  - [server](https://github.com/ThePowersCompany/server) - Zig Backend API Server
 
 - Microcontrollers
   - [micro](https://github.com/ThePowersCompany/micro) - ESP32 Espressif Idf C framework
@@ -48,7 +48,7 @@ We use Supabase for our managed PostgreSQL database.
 We have two database instances for Staging and Production.
 
 > [!NOTE]
-> We are option out of Supavisor Pooler and using direct connections on IPV4.
+> We are opting out of Supavisor Pooler and using direct connections on IPV4.
 
 - [Staging DB](https://supabase.com/dashboard/project/vjdpcabrnelrhyzdwqpd)
 
